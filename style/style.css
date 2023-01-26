@@ -1,0 +1,39 @@
+/* ---Google Font Roboto--- */
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.section{
+    display: flex;
+    justify-content: center;
+}
+
+.cover{
+    background-color: #56042C;
+    border-radius: 30px;
+    width: 82.5%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 50px;
+}
+
+/* ---style for cover photo--- */
+.cover .photo img{
+    width: 80%;
+}
+
+.photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+}
+/* ---------------------------- */
+
