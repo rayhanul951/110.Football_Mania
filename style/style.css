@@ -73,15 +73,20 @@ a{
     display: flex;
     width: 82.5%;
 } */
+
 .menu-nd-blog{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: "a a";
+    gap: 24px;
     width: 82.5%;
 }
 
 /* ---style for menus--- */
 .menus{
+    display: grid;
+    gap: 30px;
     padding: 30px;
+    border-radius: 10px;
     height: 252px;
     width: 252px;
     background-color: #56042C;
@@ -95,14 +100,23 @@ h5{
     justify-content: left;
 }
 
-.menu p{
+.menu{
     background-color: white;
     width: 100%;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.menu{
-    margin: 0;
-    padding: 0;
+.menu p a{
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.menu.red{
+    background-color: #FEC310;
 }
 
 /* ---style for blogs--- */
