@@ -52,6 +52,10 @@ a{
     border-radius: 7px;
     background-color: #FEC310;
 }
+
+.introduction .fa-greater-than{
+    margin-left: 10px;
+}
 /* ---------------------------- */
 
 /* ---style for cover photo--- */
@@ -145,6 +149,29 @@ h5{
 
 .description{
     padding: 22px;
+}
+
+.description button{
+    font-size: 21px;
+    padding: 5px 20px;
+}
+
+.description h2{
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.description .info .time,.comment{
+    margin-left: 10px;
+}
+
+.description .info .fa-comment-dots{
+    margin-left: 40px;
+}
+
+.info{
+    font-size: 18px;
+    color: gray;
 }
 
 .view-all{
