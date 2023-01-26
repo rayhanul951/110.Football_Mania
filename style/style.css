@@ -23,6 +23,7 @@ a{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     margin-top: 50px;
+    margin-bottom: 130px;
 }
 
 /* ---style for cover introduction--- */
@@ -66,3 +67,60 @@ a{
 }
 /* ---------------------------- */
 
+/* <!-- the menu-nd-blog part starts here --> */
+
+.menu-nd-blog{
+    display: flex;
+    width: 82.5%;
+}
+
+/* ---style for menus--- */
+.menus{
+    padding: 30px;
+    height: 252px;
+    width: 252px;
+    background-color: #56042C;
+    margin-right: 24px;
+}
+
+h5{
+    background-color: rgb(76, 48, 233);
+    width: 252px;
+    height: 252px;
+    padding: 30px;
+    justify-content: left;
+}
+
+.menu p{
+    background-color: white;
+    width: 100%;
+}
+
+.menu{
+    margin: 0;
+    padding: 0;
+}
+
+/* ---style for blogs--- */
+.menu-nd-blog .blogs .blog .photo{
+    margin: 0;
+    padding: 0;
+}
+
+.menu-nd-blog .blogs .blog .photo img{
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.menu-nd-blog .blogs{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 24px;
+    margin-left: 24px;
+    justify-content: space-between;
+}
+
+.menu-nd-blog .blogs .blog{
+    border: 3px solid rgba(128, 128, 128, 0.199);
+    border-radius: 15px;
+}
