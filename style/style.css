@@ -12,7 +12,8 @@ a{
 
 .section{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .cover{
@@ -24,9 +25,37 @@ a{
     margin-top: 50px;
 }
 
+/* ---style for cover introduction--- */
+.introduction{
+    margin: 111px 24px 111px 106px;
+}
+
+.introduction h1{
+    margin: 0;
+    color: white;
+    font-size: 85px;
+    font-weight: bold;
+}
+
+.introduction p{
+    font-size: 18px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.introduction a{
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 7px;
+    background-color: #FEC310;
+}
+/* ---------------------------- */
+
 /* ---style for cover photo--- */
 .cover .photo img{
-    width: 80%;
+    width: 85%;
 }
 
 .photo{
