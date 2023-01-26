@@ -69,8 +69,13 @@ a{
 
 /* <!-- the menu-nd-blog part starts here --> */
 
-.menu-nd-blog{
+/* .menu-nd-blog{
     display: flex;
+    width: 82.5%;
+} */
+.menu-nd-blog{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     width: 82.5%;
 }
 
@@ -80,7 +85,6 @@ a{
     height: 252px;
     width: 252px;
     background-color: #56042C;
-    margin-right: 24px;
 }
 
 h5{
@@ -116,11 +120,61 @@ h5{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 24px;
-    margin-left: 24px;
+    /* margin-left: 24px; */
     justify-content: space-between;
 }
 
 .menu-nd-blog .blogs .blog{
     border: 3px solid rgba(128, 128, 128, 0.199);
     border-radius: 15px;
+}
+
+.description{
+    padding: 22px;
+}
+
+.view-all{
+    display: none;
+}
+
+/* ---style for footer--- */
+footer{
+    margin-top: 130px;
+    background-color: #56042C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+footer .com-name h3{
+    margin-top: 130px;
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+footer hr{
+    width: 82.5%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 50px;
+}
+
+footer .footer-menu{
+    display: flex;
+    flex-direction: row;
+}
+
+footer .footer-menu p{
+    margin: 0 24px;
+    margin-bottom: 50px;
+}
+
+.social-icons{
+    margin-bottom: 130px;
+    font-size: 40px;
+}
+
+.icon{
+    margin: 0 12px;
 }
