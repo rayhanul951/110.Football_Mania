@@ -96,14 +96,6 @@ a{
     background-color: #56042C;
 }
 
-h5{
-    background-color: rgb(76, 48, 233);
-    width: 252px;
-    height: 252px;
-    padding: 30px;
-    justify-content: left;
-}
-
 .menu{
     background-color: white;
     width: 100%;
@@ -124,7 +116,9 @@ h5{
 }
 
 /* ---style for blogs--- */
-.menu-nd-blog .blogs .blog .photo{
+.menu-nd-blog .blogs .blog .photo
+,.matches .match .flag
+{
     margin: 0;
     padding: 0;
 }
@@ -134,15 +128,15 @@ h5{
     border-radius: 15px 15px 0px 0px;
 }
 
-.menu-nd-blog .blogs{
+.menu-nd-blog .blogs,.matches{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 24px;
-    /* margin-left: 24px; */
-    justify-content: space-between;
 }
 
-.menu-nd-blog .blogs .blog{
+.menu-nd-blog .blogs .blog,
+.matches .match
+{
     border: 3px solid rgba(128, 128, 128, 0.199);
     border-radius: 15px;
 }
@@ -176,6 +170,30 @@ h5{
 
 .view-all{
     display: none;
+}
+
+/* -----style for page-2----- */
+.matches .match .flag img{
+    width: 25%;
+}
+
+.matches .match .flag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.matches .match .flag span{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 20px;
+}
+
+.matches .match{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
 }
 
 /* ---style for footer--- */
