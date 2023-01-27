@@ -73,11 +73,6 @@ a{
 
 /* <!-- the menu-nd-blog part starts here --> */
 
-/* .menu-nd-blog{
-    display: flex;
-    width: 82.5%;
-} */
-
 .menu-nd-blog{
     display: grid;
     grid-template-areas: "a a";
@@ -236,4 +231,69 @@ footer .footer-menu p{
 
 .icon{
     margin: 0 12px;
+}
+
+/*------media query for tablet-----*/
+@media screen and (min-width:375px) and (max-width:834px) {
+    .cover{
+        width: 88%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-top: 50px;
+        margin-bottom: 70px;
+    }
+
+    .menu-nd-blog{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        width: 88%;
+    }
+
+    .menus{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 22px;
+        padding: 0px;
+        border-radius: 10px;
+        height: fit-content;
+        width: 100%;
+        background-color: #56042c00;
+    }
+
+    .menu{
+        background-color: white;
+        width: 100%;
+        border-radius: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* box-shadow: inset 2px solid black; */
+    }
+
+    .menu-nd-blog .blogs,.matches{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 24px;
+    }
+
+    .menu-nd-blog .blogs .blog.banish-t{
+        display: none;
+    }
+
+    .view-all{
+        display: inline-block;
+        background-color: #FEC310;
+
+    }
+
+    footer{
+        margin-top: 0;
+    }
+
+    footer hr{
+        width: 88%;
+    }
+
 }
