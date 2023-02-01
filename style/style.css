@@ -16,6 +16,7 @@ a{
     align-items: center;
 }
 
+/* ---style for cover introduction--- */
 .cover{
     background-color: #56042C;
     border-radius: 30px;
@@ -26,29 +27,29 @@ a{
     margin-bottom: 130px;
 }
 
-/* ---style for cover introduction--- */
 .introduction{
-    margin: 111px 24px 111px 106px;
+    margin: 111px 24px 126px 106px;
 }
 
 .introduction h1{
     margin: 0;
     color: white;
-    font-size: 85px;
+    font-size: 100px;
     font-weight: bold;
 }
 
 .introduction p{
     font-size: 18px;
     color: white;
-    margin-bottom: 40px;
+    margin-top: 30px;
+    margin-bottom: 60px;
 }
 
 .introduction a{
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
     color: black;
-    padding: 10px 20px;
+    padding: 15px 25px;
     border-radius: 7px;
     background-color: #FEC310;
 }
@@ -60,14 +61,14 @@ a{
 
 /* ---style for cover photo--- */
 .cover .photo img{
-    width: 85%;
+    width: 90%;
 }
 
 .photo{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10%;
+    padding: 8%;
 }
 /* ---------------------------- */
 
@@ -150,6 +151,10 @@ a{
     font-weight: 700;
 }
 
+.description .info{
+    display: flex;
+}
+
 .description .info .time,.comment{
     margin-left: 10px;
 }
@@ -190,6 +195,7 @@ a{
     align-items: center;
     padding: 30px;
 }
+/* ------------------------------------- */
 
 /* ---style for footer--- */
 footer{
@@ -201,7 +207,7 @@ footer{
     color: white;
 }
 
-footer .com-name h3{
+footer .comp-name h3{
     margin-top: 100px;
     font-size: 45px;
     font-weight: 500;
@@ -215,25 +221,154 @@ footer hr{
 }
 
 footer .footer-menu{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    margin: 0 60px;
-}
-
-footer .footer-menu p{
-    margin: 0 24px;
+    width: 56%;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
     margin-bottom: 50px;
 }
 
 .social-icons{
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     font-size: 40px;
 }
 
 .icon{
     margin: 0 12px;
 }
+/* ------------------------------------- */
+
+/*------media query for 14-Inch Screen-----*/
+@media screen and (min-width:834px) and (max-width:1344px) {
+    /* ---style for cover introduction--- */
+.cover{
+    width: 82.5%;
+    margin-top: 35px;
+    margin-bottom: 91px;
+}
+
+.introduction{
+    margin: 78px 17px 88px 74px;
+}
+
+.introduction h1{
+    font-size: 70px;
+}
+
+.introduction p{
+    font-size: 12.5px;
+    margin-top: 21px;
+    margin-bottom: 42px;
+}
+
+.introduction a{
+    font-size: 15.5px;
+    padding: 10.5px 17.5px;
+    border-radius: 5px;
+}
+
+.introduction .fa-greater-than{
+    margin-left: 7px;
+}
+/* ---------------------------- */
+
+/* <!-- the menu-nd-blog part starts here --> */
+
+/* ---style for menus--- */
+.menus{
+    gap: 21px;
+    padding: 21px;
+    height: 212px;
+    width: 212px;
+}
+
+.menu p a{
+    font-size: 14px;
+}
+
+/* ---style for blogs--- */
+.description{
+    padding: 15.5px;
+}
+
+.description button{
+    font-size: 15px;
+    padding: 3.5px 14px;
+}
+
+.description h2{
+    font-size: 13px;
+}
+
+.description .info .time,.comment{
+    margin-left: 7px;
+}
+
+.description .info .fa-comment-dots{
+    margin-left: 18px;
+}
+
+.info{
+    font-size: 13px;
+}
+/* ------------------------------------ */
+
+/* -----style for page-2----- */
+.matches .match .flag span{
+    font-size: 21px;
+    margin: 14px;
+}
+
+.matches .match h2{
+    display: flex;
+    justify-content: center;
+}
+
+.matches .match p{
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+}
+
+.matches .match{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 21px;
+}
+/* ------------------------------------- */
+
+/* ---style for footer--- */
+footer{
+    margin-top: 91px;
+}
+
+footer .comp-name h3{
+    margin-top: 70px;
+    font-size: 31.5px;
+    margin-bottom: 35px;
+}
+
+footer hr{
+    width: 82.5%;
+    margin-bottom: 35px;
+}
+
+footer .footer-menu{
+    margin-bottom: 35px;
+}
+
+.social-icons{
+    margin-bottom: 70px;
+    font-size: 28px;
+}
+
+.icon{
+    margin: 0 8px;
+}
+/* ------------------------------------ */
+
+}
+/* ------------------------------ */
 
 /*------media query for tablet-----*/
 @media screen and (min-width:375px) and (max-width:834px) {
@@ -297,7 +432,7 @@ footer .footer-menu p{
         gap: 24px;
     }
 
-    .menu-nd-blog .blogs .blog.banish-t{
+    .menu-nd-blog .blogs .blog.hide-on-tab{
         display: none;
     }
 
@@ -324,9 +459,19 @@ footer .footer-menu p{
         width: 88%;
     }
 
-    .footer-menu{
-        flex-wrap: wrap;
+    footer .footer-menu{
+        width: 56%;
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        justify-items: center;
+        margin-bottom: 50px;
     }
+
+    footer .footer-menu .goal-app{
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
 
 }
 /* ------------------------------------- */
@@ -376,6 +521,7 @@ footer .footer-menu p{
     .menus{
         display: grid;
         grid-template-columns: repeat(1,1fr);
+        justify-items: center;
         gap: 22px;
         padding: 0px;
         border-radius: 10px;
@@ -385,8 +531,7 @@ footer .footer-menu p{
     }
 
     .menu{
-        background-color: white;
-        width: 100%;
+        width: 70%;
         border-radius: 10px;
         display: flex;
         justify-content: center;
@@ -400,8 +545,8 @@ footer .footer-menu p{
         gap: 16px;
     }
 
-    .blog.banish-t{
-        
+    .blog.hide-on-tab{
+        display: inline;
     }
 
     .view-all{
@@ -416,8 +561,12 @@ footer .footer-menu p{
         width: 89%;
     }
 
-    .footer-menu{
-        flex-direction: column;
+    footer .footer-menu{
+        width: 56%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        margin-bottom: 50px;
     }
 
 }
