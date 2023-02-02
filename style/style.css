@@ -20,7 +20,8 @@ a{
 .cover{
     background-color: #56042C;
     border-radius: 30px;
-    width: 82.5%;
+    /* width: 82.5%; */
+    width: 1584px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     margin-top: 50px;
@@ -78,7 +79,8 @@ a{
     display: grid;
     grid-template-areas: "a a";
     gap: 24px;
-    width: 82.5%;
+    /* width: 82.5%; */
+    width: 1584px;
 }
 
 /* ---style for menus--- */
@@ -215,7 +217,8 @@ footer .comp-name h3{
 }
 
 footer hr{
-    width: 82.5%;
+    /* width: 82.5%; */
+    width: 1584px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     margin-bottom: 50px;
 }
@@ -225,6 +228,13 @@ footer .footer-menu{
     display: grid;
     grid-template-columns: repeat(6, auto);
     margin-bottom: 50px;
+}
+
+footer .footer-menu>div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
 }
 
 .social-icons{
@@ -238,10 +248,11 @@ footer .footer-menu{
 /* ------------------------------------- */
 
 /*------media query for 14-Inch Screen-----*/
-@media screen and (min-width:834px) and (max-width:1344px) {
+@media screen and (min-width:1124px) and (max-width:1600px) {
     /* ---style for cover introduction--- */
 .cover{
-    width: 82.5%;
+    /* width: 82.5%; */
+    width: 1110px;
     margin-top: 35px;
     margin-bottom: 91px;
 }
@@ -272,6 +283,9 @@ footer .footer-menu{
 /* ---------------------------- */
 
 /* <!-- the menu-nd-blog part starts here --> */
+.menu-nd-blog{
+    width: 1110px;
+}
 
 /* ---style for menus--- */
 .menus{
@@ -349,7 +363,8 @@ footer .comp-name h3{
 }
 
 footer hr{
-    width: 82.5%;
+    /* width: 82.5%; */
+    width: 1110px;
     margin-bottom: 35px;
 }
 
@@ -371,9 +386,10 @@ footer .footer-menu{
 /* ------------------------------ */
 
 /*------media query for tablet-----*/
-@media screen and (min-width:375px) and (max-width:834px) {
+@media screen and (min-width:750px) and (max-width:1124px) {
     .cover{
-        width: 88%;
+        /* width: 88%; */
+        width: 734px;
         display: grid;
         grid-template-columns: repeat(2,1fr);
         margin-top: 50px;
@@ -402,7 +418,8 @@ footer .footer-menu{
         flex-direction: column;
         align-items: center;
         gap: 24px;
-        width: 88%;
+        /* width: 88%; */
+        width: 734px;
     }
 
     .menus{
@@ -436,6 +453,10 @@ footer .footer-menu{
         display: none;
     }
 
+    .menu-nd-blog .matches{
+        margin-bottom: 30px;
+    }
+
     .view-all{
         display: inline-block;
         margin-top: 50px;
@@ -455,8 +476,15 @@ footer .footer-menu{
         margin-top: 0;
     }
 
+    footer .comp-name h3{
+        margin-top: 50px;
+        margin-bottom: 25px;
+    }
+
     footer hr{
-        width: 88%;
+        /* width: 88%; */
+        width: 734px;
+        margin-bottom: 25px;
     }
 
     footer .footer-menu{
@@ -464,23 +492,42 @@ footer .footer-menu{
         display: grid;
         grid-template-columns: repeat(4, auto);
         justify-items: center;
-        margin-bottom: 50px;
+        margin-bottom: 25px;
     }
 
     footer .footer-menu .goal-app{
         grid-column-start: 2;
         grid-column-end: 3;
+        justify-content: right;
     }
 
+    footer .footer-menu .goal-app p{
+        margin-right: 7px;
+    }
+
+    footer .footer-menu .goal-live{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        justify-content: left;
+    }
+
+    footer .footer-menu .goal-live p{
+        margin-left: 7px;
+    }
+
+    .social-icons{
+        margin-bottom: 50px;
+    }
 
 }
 /* ------------------------------------- */
 
 
 /*------media query for mobile-----*/
-@media screen and (max-width:375px) {
+@media screen and (max-width:750px) {
     .cover{
-        width: 89%;
+        /* width: 89%; */
+        width: 334px;
         display: grid;
         grid-template-columns: repeat(1,1fr);
         margin-top: 44px;
@@ -515,7 +562,8 @@ footer .footer-menu{
         flex-direction: column;
         align-items: center;
         gap: 24px;
-        width: 88%;
+        /* width: 88%; */
+        width: 334px;
     }
 
     .menus{
@@ -557,8 +605,15 @@ footer .footer-menu{
         margin-top: 24px;
     }
 
+    footer .comp-name h3{
+        margin-bottom: 15px;
+        margin-top: 30px;
+    }
+
     footer hr{
-        width: 89%;
+        /* width: 89%; */
+        width: 334px;
+        margin-bottom: 15px;
     }
 
     footer .footer-menu{
@@ -566,7 +621,11 @@ footer .footer-menu{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         justify-items: center;
-        margin-bottom: 50px;
+        margin-bottom: 15px;
+    }
+
+    .social-icons{
+        margin-bottom: 30px;
     }
 
 }
