@@ -224,7 +224,8 @@ footer hr{
 }
 
 footer .footer-menu{
-    width: 56%;
+    /* width: 56%; */
+    width: 1000px;
     display: grid;
     grid-template-columns: repeat(6, auto);
     margin-bottom: 50px;
@@ -247,8 +248,8 @@ footer .footer-menu>div{
 }
 /* ------------------------------------- */
 
-/*------media query for 14-Inch Screen-----*/
-@media screen and (min-width:1124px) and (max-width:1600px) {
+/*------media query for 14-Inch-Laptop Screen-----*/
+@media screen and (min-width:1125px) and (max-width:1600px) {
     /* ---style for cover introduction--- */
 .cover{
     /* width: 82.5%; */
@@ -370,6 +371,7 @@ footer hr{
 
 footer .footer-menu{
     margin-bottom: 35px;
+    width: 700px;
 }
 
 .social-icons{
@@ -386,7 +388,7 @@ footer .footer-menu{
 /* ------------------------------ */
 
 /*------media query for tablet-----*/
-@media screen and (min-width:750px) and (max-width:1124px) {
+@media screen and (min-width:751px) and (max-width:1124px) {
     .cover{
         /* width: 88%; */
         width: 734px;
@@ -397,7 +399,7 @@ footer .footer-menu{
     }
 
     .introduction{
-        margin: 61px 2px 61px 76px;
+        margin: 46px 2px 61px 76px;
     }
     
     .introduction h1{
@@ -457,6 +459,10 @@ footer .footer-menu{
         margin-bottom: 30px;
     }
 
+    .blogs .blog .blog-title{
+        font-size: 18px;
+    }
+
     .view-all{
         display: inline-block;
         margin-top: 50px;
@@ -488,7 +494,8 @@ footer .footer-menu{
     }
 
     footer .footer-menu{
-        width: 56%;
+        /* width: 56%; */
+        width: 470px;
         display: grid;
         grid-template-columns: repeat(4, auto);
         justify-items: center;
@@ -593,6 +600,15 @@ footer .footer-menu{
         gap: 16px;
     }
 
+    .description button{
+        font-size: 17px;
+        padding: 3px 12px;
+    }
+
+    .description h2{
+        font-size: 17px;
+    }
+
     .blog.hide-on-tab{
         display: inline;
     }
@@ -617,7 +633,8 @@ footer .footer-menu{
     }
 
     footer .footer-menu{
-        width: 56%;
+        /* width: 56%; */
+        width: 210px;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         justify-items: center;
@@ -626,6 +643,7 @@ footer .footer-menu{
 
     .social-icons{
         margin-bottom: 30px;
+        font-size: 25px;
     }
 
 }
